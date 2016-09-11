@@ -33,7 +33,7 @@ OPTIONS_COMPILE_RELEASE=-DNDEBUG -DVPN_SPEED -DUNIX -DUNIX_MACOS -DBRIDGE_PCAP -
 
 OPTIONS_LINK_RELEASE=-O2 -fsigned-char -m64 -lm -lpthread -lssl -lcrypto -liconv -lreadline -lncurses -lz -lpcap
 
-INSTALL_BINDIR=/usr/bin/
+INSTALL_BINDIR=${INSTALL_BINDIR:-"/usr/bin/"}
 INSTALL_VPNSERVER_DIR=/usr/vpnserver/
 INSTALL_VPNBRIDGE_DIR=/usr/vpnbridge/
 INSTALL_VPNCLIENT_DIR=/usr/vpnclient/
